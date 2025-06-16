@@ -1,6 +1,5 @@
 import { Box, Card, Container, Grid, Typography, styled } from "@mui/material"
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-import SchoolIcon from '@mui/icons-material/School';
 import AnimationComponent from "../../../../components/AnimationComponent/AnimationComponent";
 
 const AboutSection: React.FC = () => {
