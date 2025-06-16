@@ -5,7 +5,7 @@ import Avatar from "../../../../assets/images/avatar.jpg"
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
-import CV from "../../../../assets/pdfs/Open.pdf"
+import CV from "../../../../assets/pdfs/Curriculo-Caio-Monteiro.pdf"
 
 const HeroSection: React.FC = () => {
 
