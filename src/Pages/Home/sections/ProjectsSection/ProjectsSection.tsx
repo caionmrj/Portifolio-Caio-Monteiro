@@ -28,6 +28,15 @@ const ProjectsSection: React.FC = () => {
             codeURL: "https://github.com/Kaiudoh/Pokedex",
         },
        {
+            title: "Pro bet",
+            subtitle: "",
+            srcImg: "/assets/Pro-Bet-tumb.png",
+            description: "Projeto sobre apostas esportivas onde é possível acessar jogos de vários esportes ao vivo e marcados, além de poder fazer apostas em tempo real.",
+            technologies: "Technologies: TypeScript, TailWild, Next.JS.",
+            websiteURL: "https://projeto-pro-bet.vercel.app",
+            codeURL: "https://github.com/Kaiudoh/Projeto-ProBet",
+        },
+        {
             title: "Clone do Spotify",
             subtitle: "",
             srcImg: "/assets/Clone-spotify-tumb.png",
@@ -35,7 +44,7 @@ const ProjectsSection: React.FC = () => {
             technologies: "Technologies: JavaScript HTML e CSS.",
             websiteURL: "https://spotify-clone-one-liart.vercel.app",
             codeURL: "https://github.com/Kaiudoh/spotify-clone-",
-             },
+        },
     ]
 
     return (
