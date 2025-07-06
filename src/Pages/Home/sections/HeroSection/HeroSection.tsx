@@ -47,13 +47,8 @@ const HeroSection: React.FC = () => {
         document.body.removeChild(link);
     };
 
-    const handleEmail = () => {
-        const emailAddress = 'caionmparj@gmail.com';
-        const subject = 'Subject';
-        const body = 'Oi Caio, estava dando uma olhada no seu portifólio...';
-
-        const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.open(mailtoLink);
+    const handleContact = () => {
+        window.open('https://w.app/mrkhel', '_blank');
     }
 
     return (
@@ -87,7 +82,7 @@ const HeroSection: React.FC = () => {
                                         </StyledButton>
                                     </Grid>
                                     <Grid item xs={10} md={4}>
-                                        <StyledButton onClick={() => handleEmail()}>
+                                        <StyledButton onClick={() => handleContact()}>
                                             <EmailIcon />
                                             <Typography>
                                                 Entrar em contato
