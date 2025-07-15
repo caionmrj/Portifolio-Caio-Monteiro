@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
     };
 
     const handleContact = () => {
-        window.open('https://w.app/mrkhel', '_blank');
+        window.open('https://wa.me/5521990100670?text=Ol%C3%A1%20Caio.%20vi%20seu%20portif%C3%B3lio%20e%20resolvi%20entrar%20em%20contato', '_blank');
     }
 
     return (
