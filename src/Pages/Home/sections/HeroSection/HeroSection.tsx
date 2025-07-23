@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
     const StyledImg = styled("img")(({ theme }) => ({
         width: "80%",
         border: `1px solid ${theme.palette.primary.contrastText}`,
-        borderRadius: "50%",
+        borderRadius: "190px 300px 170px 280px",
         position: "relative"
     }));
 
