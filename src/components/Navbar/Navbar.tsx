@@ -33,6 +33,18 @@ export const StyledDesktopToolbar = styled(Toolbar)(({ theme }) => ({
     },
 }));
 
+export const AnimatedMenuItem = styled(MenuItem)(({ theme }) => ({
+    transition: "transform 0.22s cubic-bezier(.68,-0.55,.27,1.55), background 0.22s, color 0.22s",
+    borderRadius: 8,
+    '&:hover': {
+        backgroundColor: theme.palette.secondary.light,
+        transform: 'scale(1.08)',
+    },
+    '&:active': {
+        transform: 'scale(0.96)',
+    },
+}));
+
 export default function Navbar() {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
@@ -77,27 +89,15 @@ export default function Navbar() {
                         open={Boolean(anchorEl)}
                         onClose={handleClose}
                     >
-                        <MenuItem onClick={() => handleSmoothScroll("about")}>
-                            <StyledNavLink>Sobre</StyledNavLink>
-                        </MenuItem>
-                        <MenuItem onClick={() => handleSmoothScroll("skills")}>
-                            <StyledNavLink>Habilidades</StyledNavLink>
-                        </MenuItem>
-                        <MenuItem onClick={() => handleSmoothScroll("projects")}>
-                            <StyledNavLink>Projetos</StyledNavLink>
-                        </MenuItem>
+                        <AnimatedMenuItem onClick={() => handleSmoothScroll("about")}> <StyledNavLink>Sobre</StyledNavLink> </AnimatedMenuItem>
+                        <AnimatedMenuItem onClick={() => handleSmoothScroll("skills")}> <StyledNavLink>Habilidades</StyledNavLink> </AnimatedMenuItem>
+                        <AnimatedMenuItem onClick={() => handleSmoothScroll("projects")}> <StyledNavLink>Projetos</StyledNavLink> </AnimatedMenuItem>
                     </Menu>
                 </StyledMobileToolbar>
                 <StyledDesktopToolbar variant="regular">
-                    <MenuItem onClick={() => handleSmoothScroll("about")}>
-                        <StyledNavLink>Sobre mim</StyledNavLink>
-                    </MenuItem>
-                    <MenuItem onClick={() => handleSmoothScroll("skills")}>
-                        <StyledNavLink>Habilidades</StyledNavLink>
-                    </MenuItem>
-                    <MenuItem onClick={() => handleSmoothScroll("projects")}>
-                        <StyledNavLink>Projetos</StyledNavLink>
-                    </MenuItem>
+                    <AnimatedMenuItem onClick={() => handleSmoothScroll("about")}> <StyledNavLink>Sobre mim</StyledNavLink> </AnimatedMenuItem>
+                    <AnimatedMenuItem onClick={() => handleSmoothScroll("skills")}> <StyledNavLink>Habilidades</StyledNavLink> </AnimatedMenuItem>
+                    <AnimatedMenuItem onClick={() => handleSmoothScroll("projects")}> <StyledNavLink>Projetos</StyledNavLink> </AnimatedMenuItem>
                 </StyledDesktopToolbar>
             </AppBar>
         </Box >

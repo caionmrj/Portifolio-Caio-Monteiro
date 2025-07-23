@@ -32,11 +32,9 @@ const Footer: React.FC = () => {
                         <AnimatedIconButton onClick={() => window.open("https://www.linkedin.com/in/caio-nascimento-monteiro-9b039a217")}>
                             <LinkedInIcon />
                         </AnimatedIconButton>
-                        <a href="mailto:caionmparj@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
-                            <AnimatedIconButton>
-                                <EmailIcon />
-                            </AnimatedIconButton>
-                        </a>
+                        <AnimatedIconButton onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=caionmparj@gmail.com", "_blank")}> 
+                            <EmailIcon />
+                        </AnimatedIconButton>
                     </Box>
                     <Typography textAlign="center">
                         © 2025 Caio Monteiro - Todos os direitos reservados.
