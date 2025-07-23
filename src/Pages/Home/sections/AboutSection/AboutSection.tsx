@@ -6,7 +6,7 @@ import AnimationComponent from "../../../../components/AnimationComponent/Animat
 const AboutSection: React.FC = () => {
 
     // Card para experiência (sem hover animado)
-    const ExperienceCard = styled(Card)(({ theme }) => ({
+    const ExperienceCard = styled(Card)(({}) => ({
         padding: "10px 10px",
         textAlign: "center",
         marginBottom: "10px",
