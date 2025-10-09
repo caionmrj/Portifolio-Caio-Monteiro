@@ -10,24 +10,6 @@ const ProjectsSection: React.FC = () => {
 
     const projects = [
         {
-            title: "Clima tempo",
-            subtitle: "",
-            srcImg: "/assets/Clima-tempo-tumb.png",
-            description: "Site 100% funcional onde você poderá ver o clima de qualquer cidade ou estado tanto do brazil quanto do mundo, com dados atualizados em tempo real, além de mostrar a previsão dos proximos dias",
-            technologies: "Technologies: JavaScript, HTML, CSS, React.JS e vite.",
-            websiteURL: "https://clima-tempo-liart.vercel.app",
-            codeURL: "https://github.com/Kaiudoh/Clima-tempo",
-        },
-        {
-            title: "Pokedex",
-            subtitle: "",
-            srcImg: "/assets/Pokedex-tumb.png",
-            description: "Site catalogo de pokemons, onde é possível pesquisar por nome ou id, além de ver detalhes de cada pokemon onde usei o conceito e api para ter acesso aos dados.",
-            technologies: "Technologies: JavaScript, HTML e CSS",
-            websiteURL: "https://pokedex-k4y1.vercel.app",
-            codeURL: "https://github.com/Kaiudoh/Pokedex",
-        },
-       {
             title: "Pro bet",
             subtitle: "",
             srcImg: "/assets/Pro-Bet-tumb.png",
@@ -35,6 +17,24 @@ const ProjectsSection: React.FC = () => {
             technologies: "Technologies: TypeScript, TailWild, Next.JS.",
             websiteURL: "https://projeto-pro-bet.vercel.app",
             codeURL: "https://github.com/Kaiudoh/Projeto-ProBet",
+        },
+        {
+            title: "Ministério de eventos",
+            subtitle: "",
+            srcImg: "/assets/",
+            description: "Aplicação desenvolvida para uma igreja poder manusear seus eventos da melhor forma, possui sistema de login e interface diferente dependendo do nivel de acesso (adm ou user).",
+            technologies: "Technologies: React.Js, firebase, JavaScript, tailwind e vite.",
+            websiteURL: "https://ministerio-de-eventos.vercel.app",
+            codeURL: "https://github.com/caionmrj/ministerio-de-eventos",
+        },
+       {
+            title: "Clima tempo",
+            subtitle: "",
+            srcImg: "/assets/Clima-tempo-tumb.png",
+            description: "Aplicação onde você poderá ver o clima de qualquer cidade ou estado, com dados atualizados em tempo real, mostra também a previsão dos proximos dias",
+            technologies: "Technologies: JavaScript, HTML, CSS, React.JS e vite.",
+            websiteURL: "https://clima-tempo-liart.vercel.app",
+            codeURL: "https://github.com/Kaiudoh/Clima-tempo",
         },
         {
             title: "Clone do Spotify",
