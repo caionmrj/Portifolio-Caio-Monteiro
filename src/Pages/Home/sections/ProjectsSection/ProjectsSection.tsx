@@ -21,7 +21,7 @@ const ProjectsSection: React.FC = () => {
         {
             title: "Ministério de eventos",
             subtitle: "",
-            srcImg: "/assets/",
+            srcImg: "/assets/Ministerio-de-eventos-tumb.png",
             description: "Aplicação desenvolvida para uma igreja poder manusear seus eventos da melhor forma, possui sistema de login e interface diferente dependendo do nivel de acesso (adm ou user).",
             technologies: "Technologies: React.Js, firebase, JavaScript, tailwind e vite.",
             websiteURL: "https://ministerio-de-eventos.vercel.app",
