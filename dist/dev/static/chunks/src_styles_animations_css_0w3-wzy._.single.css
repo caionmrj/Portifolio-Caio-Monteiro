@@ -1,0 +1,88 @@
+/* [project]/src/styles/animations.css [app-client] (css) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline:after {
+  content: "";
+  background-color: currentColor;
+  width: 0;
+  height: 2px;
+  transition: width .3s cubic-bezier(.4, 0, .2, 1);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.hover-underline:hover:after {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, :before, :after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0003;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0000004d;
+}
+
+/*# sourceMappingURL=src_styles_animations_css_0w3-wzy._.single.css.map*/
